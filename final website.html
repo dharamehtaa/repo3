@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset = "UTF-8">
+  <title> DJS ACM SIGAI </title>
+    <style>    
+body{
+  margin:1%;
+  padding:1%; 
+  font-size:105%;
+  font-family:"Open Sans", Merriweather, serif;
+  background-color:rgba(197, 240, 227,0.6);
+  background-attachment: fixed;
+
+}
+header{
+  /*font-family:"Times Neu Roman", "sans serif";*/
+  font-style:italic;
+  background-color:#0000ff;
+  background-image: url("https://media.istockphoto.com/id/1148091793/photo/technology-abstract.jpg?b=1&s=170667a&w=0&k=20&c=DT-gZtTyAcf1aV_DPo0HHRSuvVy4YQyShcS7dkJaeyQ=");
+  padding:4%;
+  backround-repeat: no-repeat;
+  backround-size:cover;
+}
+h1{
+  text-align:center;
+  color:#F5F5F5;
+  text-transform:uppercase;
+  text-shadow:2px 2px 4px rgba(13, 13, 13);
+}
+h2{
+  /*font-family:Raleway, sans-serif;*/
+  font-style:bold;
+  text-decoration:underline;
+}
+p{
+  font-style:bold;
+}
+nav{
+  text-align:center;
+  box-shadow: 1px 2px 5px 1px;
+  }
+nav a{
+  background-color: rgba(170,208,227,0.6);
+  color:black;
+  display: inline-block;
+  width:10%;
+  margin:1% 5% 1%;
+  font-size:110%;
+  border-radius:5%;
+  text-decoration:none;
+  padding:5px;
+}
+nav a:hover{
+  background-color: rgba(147,159,217,0.5);
+}
+.active{
+  background-color: rgba(182,240,220,0.8);
+}
+#recruit{
+  font-style:bold;
+}
+#mission{
+font-family: Georgia;
+}
+#list ul{
+  font-style:italic;
+  list-style-type: none;
+  margin-left:8px;
+  padding:0px 1px;
+}
+  #list li::before {
+    content: "\2713";
+        color: green;
+        margin-right: 5px;
+}
+section {
+  /*font-family: "TImes Neu Roman", sans-serif;*/
+  ;
+}
+summary{
+  font-style:italic;
+}
+details {
+  margin-bottom: 20px;
+}
+  </style>
+</head>
+  <body>
+    
+
+    
+  <header>
+    <h1> DJS ACM SIGAI </h1>
+    <nav>
+      <a class="active" href = "#">Home</a>
+      <a href = "#">About Us</a>
+      <a href = "#">Events</a>
+      <a href = "https://instagram.com/djs.sigai?igshid=ZDdkNTZiNTM=">Socials</a>
+      <br>
+    </nav>
+    </header>
+    
+    <p>Welcome to SIGAI, the Special Interest Group on Artificial Intelligence. We're a community of experts and enthusiasts who are dedicated to advancing the field of AI/ML through research, education, and collaboration. We promote responsible and ethical AI/ML development and offer various opportunities for learning, networking, and making a positive impact on society. </p>
+    
+    <section>
+      <h2>Introduction</h2>
+      <h3>What is DJS ACM SIGAI?</h3>
+       <p>ACM SIGAI is an interdisciplinary group of academic and industrial researchers, practitioners, software developers, end users, and students who work together to promote and support the growth and application of AI principles and techniques throughout computing. SIGAI is one of the oldest special interest groups in the ACM. SIGAI, previously called SIGART, started in 1966, publishing the SIGART Newsletter that later became the SIGART Bulletin and Intelligence Magazine.</p>
+      </section>
+  <section>
+      <h3>What do we provide?</h3>
+    <div id="list">
+    <ul>
+      <li> Seminars</li>
+      <li> Workshops</li>
+      <li> Events </li>
+    </ul>
+    </div>
+    </section>
+    
+   <div id="mission"> 
+     <p>Our mission is to help equip students with the right knowledge and skillset to enter this new age of Artificial Intelligence with ease. Through our seminars and workshops, we guarantee you all the experience you need in the field of Artificial Intelligence And Machine Learning!</p>
+    </div>
+     
+    <div id="recruit"> 
+     <p>Don't miss out on this opportunity and apply to join us now! </p>
+      
+    </div>
+     <div>
+    <details>
+      <summary> The following positions are open for applications -</summary> <ul>
+      <li> Co-Marketing Head</li>
+      <li> Co-Events Head</li>
+        <li> Co-Publicity Head</li>
+        <li> Co-Creatives Head</li>
+        <li> Co-Technical Head</li>
+        <li> Co-Infotech Head</li>
+        <li> Co-Editorial Head</li>
+        <li> Co-Logistics Head</li>
+        
+    </ul>
+    </details>
+  </div>
+    <p>Register now!</p>
+    <form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="position">Position:</label>
+  <select id="position" name="position" required>
+    <option value="Co-Marketing Head">Co-Marketing Head</option>
+    <option value="Co-Events Head">Co-Events Head</option>
+    <option value="Co-Publicity Head">Co-Publicity Head</option>
+    <option value="Co-Creatives Head">Co-Creatives Head</option>
+    <option value="Co-Technical Head">Co-Technical Head</option>
+    <option value="Co-Infotech Head">Co-Infotech Head</option>
+    <option value="Co-Editorial Head">Co-Editorial Head</option>
+    <option value="Co-Logistics Head">Co-Logistics Head</option>
+  </select><br><br>
+  <label for="resume">Resume:</label>
+  <input type="file" id="resume" name="resume"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+    <script>
+      function submitForm() {
+        alert("Thank you for submitting your application! We will review it and get back to you soon.");
+      }
+      document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        submitForm();
+      });
+    </script>
+  </body>
+  </html>
